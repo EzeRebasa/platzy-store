@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                LOGIN
+            </mat-card-title>      
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <mat-form-field>
+                    <input placeholder="usuario@mail.com" formControlName="email" matInput type="email">
+                </mat-form-field>
+                <div *ngIf="getEmailField.errors && getEmailField.dirty"> 
+                    <mat-error *ngIf="getEmailField.hasError('email_invalid')"> Este email no es válido </mat-error>
+                    <mat-error *ngIf="getEmailField.hasError('required')"> Este campo es requerido </mat-error>
+                </div>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <input placeholder="Contraseña" formControlName="password" matInput type="password">
+                </mat-form-field>
+                <div *ngIf="getPassField.errors && getPassField.dirty"> 
+                    <mat-error *ngIf="getPassField.hasError('password_invalid')"> Contraseña invalida </mat-error>
+                    <mat-error *ngIf="getPassField.hasError('required')"> Este campo es requerido </mat-error>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</form>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 import { CartService } from 'src/app/core/services/cart.service';
 import { Product } from 'src/app/product.model';
 
@@ -15,10 +16,16 @@ export class OrderComponent implements OnInit {
   constructor(
     private cartService: CartService
   ) { 
-    this.products$ = this.cartService.cart$;
+    this.products$ = this.cartService.cart$
+    .pipe(
+      map( products => [...new Set(products)]) // EL Set devuelve un iterable y lo transformo en array 
+    )
+
+    console.log('Products en Constructor', this.products$);
   }
 
   ngOnInit() {
+    console.log('Products en OnInit', this.products$);
   }
 
 }

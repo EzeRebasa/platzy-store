@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { GroupByPipe } from './pipes/groupBy/group-by.pipe';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { MaterialModule } from '../material/material.module';
     FooterComponent,
     HighlightDirective,
     ExponentialPipe,
+    GroupByPipe,
   ],
   exports: [
     HeaderComponent,

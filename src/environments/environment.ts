@@ -4,7 +4,17 @@
 
 export const environment = {
   production: false,
-  url_api: 'https://platzi-store.herokuapp.com'
+  url_api: 'https://platzi-store.herokuapp.com',
+
+  // Se puede Configurar para pegarle a otro firebase para desarrollo
+  firebase: {
+    apiKey: "AIzaSyD9uXNmkaAsV4234xNC6yMfmnuFhKTuE3w",
+    authDomain: "platzi-store-4bdb1.firebaseapp.com",
+    projectId: "platzi-store-4bdb1",
+    storageBucket: "platzi-store-4bdb1.appspot.com",
+    messagingSenderId: "331264329948",
+    appId: "1:331264329948:web:d041cc953cfbc298954c19"
+  }
 };
 
 /*

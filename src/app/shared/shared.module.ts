@@ -24,6 +24,7 @@ import { GroupByPipe } from './pipes/groupBy/group-by.pipe';
     FooterComponent,
     HighlightDirective,
     ExponentialPipe,
+    GroupByPipe
   ],
   imports: [
     CommonModule,

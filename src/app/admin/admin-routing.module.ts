@@ -7,8 +7,6 @@ import { TableComponent } from './components/table/table.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 const routes: Routes = [
@@ -40,16 +38,7 @@ const routes: Routes = [
       {
         path: 'products/edit/:id',
         component: EditProductComponent
-      },
-      {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: 'register',
-        component: RegisterComponent
-      },
-      
+      },  
 
     ]
   },

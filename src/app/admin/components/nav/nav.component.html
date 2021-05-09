@@ -5,12 +5,11 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink='/admin/login'> Login </a>
       <a mat-list-item routerLink='/admin'> Home</a>
       <a mat-list-item routerLink='/admin/create'> Crear Producto </a>
       <a mat-list-item routerLink='/admin/products'> Listado de Productos</a>
       <a mat-list-item routerLink='/admin/table'> Tabla </a>
-      <a mat-list-item routerLink='/admin/register'> Registro </a>
+      <button mat-list-item (click)="logout()"> Cerrar sesion </button>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

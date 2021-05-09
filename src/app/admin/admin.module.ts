@@ -17,8 +17,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FormProductComponent } from './components/form-product/form-product.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 
@@ -31,8 +29,6 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
     ProductsListComponent,
     DashboardComponent,
     FormProductComponent,
-    LoginComponent,
-    RegisterComponent,
     EditProductComponent],
     
   imports: [

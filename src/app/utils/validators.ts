@@ -25,7 +25,7 @@ export class MyValidators {
 
     static isPassValid(control: AbstractControl) {
         const value= control.value;
-        const rePass= /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}$/;
+        const rePass= /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
     
         if(!rePass.test(value)) {
             return { password_invalid: true }

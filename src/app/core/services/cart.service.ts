@@ -19,4 +19,5 @@ export class CartService {
     this.cart.next(this.products) // Notifico a todos los componentes suscriptos que algo se agregó al carrito
   }
 
+
 }

@@ -1,0 +1,21 @@
+.row {
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    &.count {
+        justify-content: space-evenly;
+    }
+}
+
+.image {
+    max-width: 200px;
+}
+
+
+
+

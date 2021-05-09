@@ -70,8 +70,6 @@ export class FormProductComponent implements OnInit {
   uploadFile(event) {
     const file = event.target.files[0]; 
     const name = file.name;
-    console.log(name);
-    
     const fileRef = this.fireStorage.ref(name);
     const task = this.fireStorage.upload(name, file); // Esta tarea es un Observable que depéndera de lo que tarde en subirse la imagen
 

@@ -7,7 +7,7 @@ import { Product } from 'src/app/product.model';
 
 export class GroupByPipe implements PipeTransform {
 
-  transform(objects: object[], id: string): any {
+  transform(objects: object[]): any {
     // Obtengo cantidades de cada producto
     const groupProducts: any = objects.reduce( (cant, prod: Product) => {
       cant[prod.id] = (cant[prod.id] || 0 ) + 1;

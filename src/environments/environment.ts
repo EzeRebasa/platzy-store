@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url_api: 'https://platzi-store.herokuapp.com',
+  url_api: 'http://platzi-store.herokuapp.com',
 
   // Se puede Configurar para pegarle a otro firebase para desarrollo
   firebase: {

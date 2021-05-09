@@ -4,24 +4,6 @@
         <div *ngIf="(products$ | async | groupBy ) as products">
             <p *ngIf="products.length == 0"> No hay productos </p>
             <div class="row" *ngFor="let product of products">
-                <!-- <mat-card class="card">
-                    <img mat-card-image class="image" [src]="product.image" alt="Imagen de producto">
-                    <mat-card-content class="content">
-                        <div class="box">
-                            {{ product.count }}
-                        </div>
-                        <div class="box">
-                            {{ product.title }}
-                        </div>
-                        <div class="box">
-                            {{ product.price }}
-                        </div>
-                    </mat-card-content>
-                    <mat-card-actions class="actions">
-                         <button mat-button> LIKE </button> 
-                        <button mat-button> Eliminar </button>
-                    </mat-card-actions>
-                </mat-card> -->
 
                 <div class="col-xs-12 col-sm-2 col-md-2">
                     <div class="box">
